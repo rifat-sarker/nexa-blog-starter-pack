@@ -1,6 +1,10 @@
 import BlogCard from "@/components/ui/BlogCard";
 import { Blog } from "@/types";
+import { Metadata } from "next";
 
+export const metadata:Metadata = {
+  title: "NexaBlog | Blogs"
+}
 
 const BlogPage = async() => {
     const res = await fetch('http://localhost:5000/blogs', {
